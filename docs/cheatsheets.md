@@ -4,3 +4,5 @@
 
 `rails g resource Author name:string --no-test-framework`
 `rails g resource Article title:string body:text author:references --no-test-framework`
+`rails g serializer Article title body`
+`rails g serializer Author name`
