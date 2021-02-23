@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - type: volume
+        source: db_data
+        target: /var/lib/mysql
+    ports:
+      - 3306:3306
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ******
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ******
+volumes:
+  db_data: {}
