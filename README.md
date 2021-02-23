@@ -8,6 +8,11 @@
 rails new my-api --api --no-sprockets -d mysql
 ```
 
+### docker
+```bash
+docker compose up -d
+```
+
 ### Start (Recommand read a [Trobleshooting](./docs/trobleshooting.md))
 
 ```
